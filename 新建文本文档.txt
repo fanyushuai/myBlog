@@ -1,0 +1,31 @@
+hexo 
+安装nodejs
+安装git
+新建文件夹进入 
+sudo npm install -g hexo （切换淘宝镜像npm config set registry https://registry.npm.taobao.org，查看npm config get registry）
+hexo init 
+hexo generate（hexo g）
+hexo server
+修改 _config.yml 
+deploy:
+     type: git
+     repo: https://github.com/fanyushuai/fanyushuai.github.io.git（到gitgub新建repositories）
+     branch: master
+npm install hexo-deployer-git --save
+
+hexo deploy
+
+每次部署的步骤，可按以下三步来进行。
+
+    hexo clean
+
+    hexo generate
+
+    hexo deploy
+
+hexo clean && hexo g && hexo d
+
+现有主题 next，kael
+
+
+    

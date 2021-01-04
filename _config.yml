@@ -26,6 +26,9 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+- 'jquery-1.8.3.min.js'
+- 'av-min.js'
+
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -38,9 +41,9 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
+  enable: false
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace:
   
 # Home page setting
@@ -84,6 +87,12 @@ search:
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
+
+# add post views
+leancloud_visitors:
+  enable: true
+  app_id: QNr6zQWX8nzs9alWfAoG4KW9-gzGzoHsz
+  app_key: vALagihA6ROUf7XXp1sjDD2j
 
 deploy:
      type: git
